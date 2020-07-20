@@ -75,7 +75,7 @@
     owner: "{{ postgresql_user_name }}"
     group: "{{ postgresql_user_name }}"
     backup: yes
-  notify: Reload PostgreSQL
+  notify: Restart PostgreSQL
 
 - name: Install pg_hba.conf
   template:
